@@ -66,7 +66,7 @@ bash
 nodemone chat.js
 The server will be running on the specified port.
 
-Open your web browser and go to http://localhost:3000 (replace 3000 with the port you specified).
+Open your web browser and go to http://localhost:3000/chat.html (replace 3000 with the port you specified).
 
 ## Features
 Chat Interface:
