@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="message-form">
+        <div class="mb-3">
+            <label for="messageInput" class="form-label">Message</label>
+            <input type="text" id="user-message" class="form-control" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io('http://localhost:3000');
+        socket.on('connect', () => {
+            console.log(socket.id);
+            socket.emit('messageFromClient', { message: 'Welcome from the client!' });
+        });
+
+        socket.on('messageFromServer', (data) => {
+            console.log(data);
+        });
+
+        socket.io.on("reconnect", (attempt) => {
+            console.log('reconnect tries: ' + attempt);
+        });
+    </script>
+</body>
+
+</html>

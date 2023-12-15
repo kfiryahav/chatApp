@@ -1,0 +1,9 @@
+#chat {
+    word-break: break-all;
+}
+
+.messageTime {
+    font-size: 0.7em;
+    color: rgb(154, 154, 154);
+    font-style: italic;
+}
