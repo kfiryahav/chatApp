@@ -9,8 +9,8 @@ Welcome to the Chat App project! This application enables users to participate i
 ### Frontend:
 
 - HTML
-- CSS (You may use a library like Bootstrap or Tailwind for styling)
-- Vanilla JavaScript (No jQuery or any libraries/front-end frameworks)
+- CSS (Bootstrap)
+- Vanilla JavaScript
 
 ### Backend:
 
