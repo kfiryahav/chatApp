@@ -50,12 +50,12 @@ Before running the chat app, make sure you have the following software installed
 
 ### Configuration
 
-1. Open the `chat.js` file in the `server` directory.
+1. Open the `index.js` file in the `server` directory.
 
 2. Set the appropriate values for the `PORT` variable.
 
    ```bash
-   # chat.js
+   # index.js
    
    PORT: The port on which the server will run (e.g., 3000).
 
@@ -63,7 +63,7 @@ Before running the chat app, make sure you have the following software installed
 Start the server (with noemone):
 
 bash
-nodemone chat.js
+npm run dev
 The server will be running on the specified port.
 
 Open your web browser and go to http://localhost:3000/chat.html (replace 3000 with the port you specified).
